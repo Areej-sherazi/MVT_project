@@ -1,0 +1,18 @@
+<h1>Add Student</h1>
+
+
+<form method="POST" action="{% url 'myapp:myapp-views-student' %}" >
+    {% csrf_token %}
+    Name:<br>
+    <input name="name">
+    <br><br>
+    Age:<br>
+    <input name="age">
+    <br><br>
+    grade:<br>
+    <input name="grade">
+    <br><br>
+
+    <br><br>
+    <input type="submit" value="Submit">
+</form>

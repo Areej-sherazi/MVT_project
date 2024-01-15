@@ -1,0 +1,23 @@
+<head>
+    <title>Student Information</title>
+  </head>
+  
+  <body>
+    
+    {% if student_list %}
+    <ul>
+        {% for student in student_list %}
+        <li> <b> {{student.name}} </b> | {{student.age}} </b> | {{student.grade}} </li> <a href="{% url 'myapp:myapp-views-detail' student.id %}"> Student Detail</a>
+        <a href="{% url 'myapp:myapp-views-delete' student.id %}"> Student Delete</a>
+        <a href="{%url 'myapp:myapp-views-update' student.id %}">Update Student</a>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No student information available in the database. </p>
+    {% endif %}
+
+    <a href="{% url 'myapp:myapp-views-student' %}" >Add Student</a>
+    
+  </body>
+  
+</html>
