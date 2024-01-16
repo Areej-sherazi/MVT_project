@@ -2,7 +2,8 @@
 ## welcome to Django MVT Project
 - follow these steps to run this project in your local machine
 - clone the repositry in your local machine by using command 
-   git clone
+   git clone(git@github.com:Areej-sherazi/MVT_project.git)
+  
 -now nevigate to your project repo
 - create virtual env and activate it.
 - to create virtual environment, run command
